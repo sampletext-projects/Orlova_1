@@ -4,11 +4,15 @@ using namespace std;
 
 int main()
 {
+	setlocale(LC_ALL, "russian");
 	double operand1, operand2;
 	double result;
 
 	char operation;
 	char r;
+
+	cout << "Выполнила студентка группы УТН-111 Орлова А.А." << endl;
+	cout << "Программа \"Простой калькулятор\"" << endl;
 
 	do
 	{
@@ -42,7 +46,8 @@ int main()
 		}
 		cout << "\nAgain? (1): ";
 		cin >> r;
-	} while (r == '1');
+	}
+	while (r == '1');
 
 
 	return 0;
